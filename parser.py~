@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+print "hello world"
+print "file to open"
+
+txtfile = raw_input()
+txt=open(txtfile, "r")
+print "your file to be broken down is ",txtfile
+
+string = txt.read()
+string replace("."," ")
+
+list =  string.split()
+
+list2 = sorted(list)
+length = len(list)
+textlength = len(list)
+print "The length of your text in words is ", textlength
+a = 1
+while (a < length-1):
+ # print list2[a],list2[a+1]
+   if list2[a] == list2[a+1]:
+      list2.remove(list2[a+1])
+      length = length - 1
+   a = a+1
+ 
+print "The number of unique words in your text is ",  len(list2)
+print list2
+
