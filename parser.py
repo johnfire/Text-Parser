@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+import wx
+import os
+import os.path
 #by christopher rehm
 #may 25 2015
 #a simple program that does word count in a txt document
